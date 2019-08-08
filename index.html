@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Rafico 100% verde</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Campaña politica, rafico, partido verde">
+  <meta name="author" content="Widsoft">
+  <meta name="owner" content="Rafael">
+  <meta name="robots" content="index, follow">
+
+  <link rel="stylesheet" href="css/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/fontawesome-webfont.ttf">
+  <link rel="stylesheet" href="css/Diseño.css?v1">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900,900i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+<header>
+    <figure  id="eslo" style="position: absolute;margin: 0px;left: 85%; margin-top:5px;" >
+        <img style="width:50%"  src="img/Eslogan.png" alt="Partido verde">
+      </figure>
+  <h1>
+    <a href="index.html">
+        <figure>
+            <img src="img/partido.png" alt="">
+          </figure>
+    </a>
+    
+  </h1>
+
+  <nav id="iomenu">
+    <figure id="showmenu" class="ioMenuMovil" onclick="displayMenu()">
+      <img src="img/menu open.png" alt="">
+    </figure>
+
+    <div id="card_menu">
+        <figure id="hidemenu" class="ioMenuMovil" onclick="displayMenu()">
+          <img src="img/boton-de-menu-de-tres-lineas-horizontales (1).png" alt="">
+            
+          </figure>
+          <ul>
+            <li href="#" onclick="navSection('Inicio')">Inicio</li>
+            <li href="#" onclick="navSection('Biografia')">Biografía</li>
+            <li href="#" onclick="navSection('Galeria')">Galería</li>
+            <li href="#" onclick="navSection('HV')">Hoja de vida</li>
+            <li href="#" onclick="navSection('Firmar')">Firmar</li>
+          </ul>
+    </div>
+  </nav>
+
+  <!--
+  <div id="prev_section" onclick="displaySection('prev')">
+    <img src="img/Izquierda.png" alt="">
+  </div>
+  <div id="next_section" onclick="displaySection('next')">
+    <img src="img/Derecha.png" alt="">
+  </div>
+-->
+</header>
+
+<div id=slider>
+  <section class="slide" id="Inicio" style="display: block">
+  
+  <div class="mainLogo" >
+      <!--<h2 style="color: white; padding-top: 100%; padding-left: 80%"> <strong >Rafico Diputado</strong>    </h2>
+      <figure><img src="img/FOTOS LISTA.jpg" alt="Rafico"></figure>-->
+  </div>
+  </section>
+
+  <section class="slide" id="Biografia" style="display: none">
+    <div class="mainLogo" >
+
+      <h2><strong>SOBRE EL PARTIDO</strong></h2>
+
+      <p class="Letrascontenido">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+      </p>
+      <h2> <strong>SOBRE EL CANDIDATO</strong></h2>
+
+      <p class="Letrascontenido">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci 
+          velit..."
+      </p>
+      <p class="Letrascontenido">
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+      </p>
+      <p class="Letrascontenido">
+          The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+      </p>
+      
+  </div>  
+  </section>
+
+  <section class="slide" id="Firmar" style="display: none">
+    <div class="mainLogo" style="    text-align: -webkit-center;">
+      <h2> <strong style="font-size: 2.5vw;">Estamos trabajando en ello</strong>    </h2>
+      <figure><img style="width: 60%" src="img/barrera.png" alt="Rafico"></figure>
+  </div> 
+  </section>
+
+  <section class="slide" id="Galeria" style="display: none">
+    <div class="mainLogo" style="    text-align: -webkit-center;">
+        <h2> <strong style="font-size: 2.5vw;">Estamos trabajando en ello</strong>    </h2>
+        <figure><img style="width: 60%" src="img/barrera.png" alt="Rafico"></figure>
+    </div> 
+  </section>
+
+  <section class="slide" id="HV" style="display: none">
+      <div class="mainLogo" >
+
+          <h2><strong>CURRICULUM CANDIDATO</strong></h2>
+    
+          <p class="Letrascontenido">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    
+          </p>
+          <h2> <strong>PROPUESTA</strong></h2>
+    
+          <p class="Letrascontenido">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    
+          </p>
+          
+      </div> 
+  </section>
+</div>
+
+<footer>
+  <div class="rrss">
+      
+      <p style="margin: 0; padding-left: 10px; float: left;">©WidSoft</p>
+    <a style="margin-left: 115px;" href='https://www.instagram.com/jorgepana.r' target="_blank" ><img src="img/instagram.png" alt=""></a>
+    <a href='https://twitter.com/home' target="_blank" ><img src="img/Twitter.png" alt=""></a>
+    <a href='https://www.facebook.com/jorge.a.ramos.3939' target="_blank" ><img src="img/Facebook.png" alt=""></a>
+    <div style="margin: 0; float: right; padding-right: 10px; ">
+        <p style="text-align: -webkit-right; margin: 0px">voyconmipana@gmail.com</p>
+        <p style="text-align: -webkit-right; margin: 0px">Frente a Mega Mall</p>
+    </div>
+    
+    <!--<a href="#" target="_blank" ><img src="img/whatsaap.png" alt=""></a>-->
+  </div>
+  
+</footer>
+
+<script>
+alertSize();
+function alertSize() { 
+  var myWidth = 0, myHeight = 0; 
+  if( typeof( window.innerWidth ) == 'number' ) { 
+    //No-IE 
+    myWidth = window.innerWidth; 
+    myHeight = window.innerHeight; 
+  } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) { 
+    //IE 6+ 
+    myWidth = document.documentElement.clientWidth; 
+    myHeight = document.documentElement.clientHeight; 
+  } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) { 
+    //IE 4 compatible 
+    myWidth = document.body.clientWidth; 
+    myHeight = document.body.clientHeight; 
+  } 
+  var display;
+  var menu = document.getElementById("card_menu");
+  display = menu.style.display;
+  if(myWidth<767){
+    menu.style.display = "none";
+  }else{
+    menu.style.display = "block";
+  }
+
+  document.getElementById("Inicio").style.backgroundSize = myHeight;
+  document.getElementById("Firmar").style.backgroundSize = myHeight;
+
+} 
+
+function displayMenu(){
+    var display;
+    var menu = document.getElementById("card_menu");
+    display = menu.style.display;
+    if(display=="none"){
+      menu.style.display = "block"
+    }else{
+      menu.style.display = "none"
+    }
+
+  }
+
+function navSection(nav){
+  var section = new Array(5);
+  section[0]="Inicio";
+  section[1]="Biografia";
+  section[2]="Firmar";
+  section[3]="Galeria";
+  section[4]="HV";
+
+  var search;
+  var show;
+  for(var i=0; i<5; i++){
+    search = document.getElementById(section[i]);
+    search.style.display ="none";
+    if(section[i]==nav){
+      search.style.display ="block";
+    }
+  }  
+}
+
+function displaySection(nav){
+  var section = new Array(5);
+  section[0]="Inicio";
+  section[1]="Biografia";
+  section[2]="Firmar";
+  section[3]="Galeria";
+  section[4]="HV";
+
+  
+
+  var search;
+  var show;
+  for(var i=0; i<5; i++){
+    search = document.getElementById(section[i]);
+    show = search.style.display;
+    if(show == "block"){
+      search.style.display = "none";
+      if(nav=="next"){
+        i++;
+        if(i>4){
+          i=0;
+        }
+      }
+      if(nav=="prev"){
+        i--;
+        if(i<0){
+          i=4;
+        }
+      }
+      search = document.getElementById(section[i]);
+      search.style.display = "block";
+      break;
+    }
+
+  }
+}
+</script>
+
+</body>
+
+</html>
