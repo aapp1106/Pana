@@ -16,11 +16,21 @@
   <link rel="stylesheet" href="css/Diseño.css?v1">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900,900i&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+
+<!-- Bootstrap -->
+<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- Custom stlylesheet -->
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+
 </head>
 
 <body>
 <header>
-    <figure  id="eslo" style="position: fixed;margin: 0px;left: 85%; margin-top:5px;" >
+    <figure  id="eslo" style="position: absolute;margin: 0px;left: 85%; margin-top:5px;" >
         <img style="width:50%"  src="img/Eslogan2.png" alt="Partido verde">
       </figure>
   <h1>
@@ -80,38 +90,61 @@
 
 
           <p class="Letrascontenido">
-              Hago parte de una generación empoderada que tiene muchos retos sociales en la próxima década. 
-              Con alegria puedo decir que he desarrollado proyectos de responsabilidad social como biocercas en el Río Guatapuri, 
-              Una siembra de árboles de cañaguate en avenidas principales de la ciudad y el impulso a diferentes clubes de fútbol rugby,
-              en este último nombrado miembro honorario gracias a los esfuerzos que hemos adelantado para hacer de este un deporte más visible para los vallenatos. 
-              
+            Hago parte de una generación empoderada que tiene muchos retos sociales en la próxima década. 
+            Con alegria puedo decir que he desarrollado proyectos de responsabilidad social como biocercas en el Río Guatapuri, Una siembra de árboles de cañaguate en avenidas principales de la ciudad.
           </p>
+
+          <figure style="display:flex;" >
+            <img style="width:50%; padding-right: 20px;" src="img\gale\5.jpeg" alt="Alternate Text" />
+            <img style="width:50%" src="img\gale\4.jpeg" alt="Alternate Text" />
+          </figure>
+
+
+            <p class="Letrascontenido">
+               Se impusaron diferentes clubes de fútbol rugby,
+              en este último nombrado miembro honorario gracias a los esfuerzos que hemos adelantado para hacer de este un deporte más visible para los vallenatos.   
+          </p>
+          <figure style="display:flex;">
+
+            <img style="width:100%;padding-right: 20px;"  src="img\gale\3.jpeg" alt="Alternate Text" />
+            
+        </figure>
+
+        <p class="Letrascontenido">
+          Actualmente trabajo en el movimiento <span class="color_textoazul">#EquipoAzul</span> desde el cual propongo construir proyectos sostenibles para solucionar problemáticas que tiene nuestra ciudad y de esta forma mitigar el impacto negativo que generan las mismas en la calidad de vida de nosotros los vallenatos.
+      </p>
 
           <figure style="display:flex;">
 
               <img style="width:50%; padding-right: 20px;" src="img\gale\1.jpeg" alt="Alternate Text" />
               <img style="width:50%" src="img\gale\2.jpeg" alt="Alternate Text" />
           </figure>
-          <figure style="display:flex;">
-
-              <img style="width:50%;padding-right: 20px;"  src="img\gale\3.jpeg" alt="Alternate Text" />
-              <img style="width:50%" src="img\gale\4.jpeg" alt="Alternate Text" />
-          </figure>
-          <figure style="display:flex;">
-
-              <img style="width:50%" src="img\gale\5.jpeg" alt="Alternate Text" />
-          </figure>
-          <p class="Letrascontenido">
-              Actualmente trabajo en el movimiento <span class="color_textoazul">#EquipoAzul</span> desde el cual propongo construir proyectos sostenibles para solucionar problemáticas que tiene nuestra ciudad y de esta forma mitigar el impacto negativo que generan las mismas en la calidad de vida de nosotros los vallenatos.
-          </p>
+          
+          
+          
 
       </div>  
   </section>
 
-  <section class="slide" id="Firmar" style="display: none">
-    <div class="mainLogo" style="    text-align: -webkit-center;">
-      <h2> <strong style="font-size: 2.5vw;">Estamos trabajando en ello</strong>    </h2>
-      <figure><img style="width: 60%" src="img/barrera.png" alt="Rafico"></figure>
+  <section class="slide" id="Firmar" style="display: none; text-align: -webkit-center;">
+    <div class="mainLogo" >
+      <h2> <strong style="font-size: 2.5vw;">Datos</strong>    </h2>
+      <!-- contact form -->
+					<div class="col-md-12">
+						<div class="contact-form">
+							<form id="form_Registrar">
+								<input class="input" type="text" name="Cedula" id="Cedula" placeholder="Cedula" required>
+								<input class="input" type="text" name="name" id="name" placeholder="Nombre" required>
+								<input class="input" type="text" name="Celular" id="Celular" placeholder="Celular" required>
+								<select class="form-control" id="Ciudad" name="Ciudad" aria-placeholder="Ciudad">
+
+								</select>
+								
+								<button  style="margin-top: 30px" class="main-button icon-button pull-right" id="btnGuardarRegistrar">Firmar</button>
+							</form>
+						</div>
+					</div>
+					<!-- /contact form -->
   </div> 
   </section>
 
@@ -148,9 +181,9 @@
     <a href='https://twitter.com/jorgepanar' target="_blank" ><img src="img/Twitter.png" alt=""></a>
     <a href='https://www.facebook.com/jorge.a.ramos.3939' target="_blank" ><img src="img/Facebook.png" alt=""></a>
     <div style="margin: 0; float: right; padding-right: 10px; ">
-        <p style="text-align: -webkit-right; margin: 0px">voyconmipana@gmail.com</p>
-        <p style="text-align: -webkit-right; margin: 0px">Calle 16 No. 19A - 49 B. Dangond, Valledupar</p>
-        <p style="text-align: -webkit-right; margin: 0px">+57 3216922543</p>
+        <p style="text-align: -webkit-right; margin: 0px"><i class="fa fa-envelope"></i> voyconmipana@gmail.com</p>
+        <p style="text-align: -webkit-right; margin: 0px"><i class="fa fa-map-marker"></i> Calle 16 No. 19A - 49 B. Dangond, Valledupar</p>
+        <p style="text-align: -webkit-right; margin: 0px"><i class="fa fa-phone"></i>  +57 3216922543</p>
         
     </div>
     
