@@ -145,6 +145,8 @@ blockquote:before{
 .Letrascontenido{
 	text-align: justify;
 	line-height: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 .bg-image.bg-parallax {
