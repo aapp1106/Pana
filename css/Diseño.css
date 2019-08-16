@@ -278,10 +278,12 @@ img{
     .mainLogo {
         padding-right: 20px;
 	}
-	
+	#eslo img{
+		width: 40%;
+	}
 }
 
-@media screen and (min-width: 600px){
+@media screen and (max-width: 600px){
 	
 	header #eslo{
 		width:200px !important;
@@ -301,21 +303,21 @@ img{
 		position: absolute;
 	}
 	header nav #card_menu {
-		top: -30px;
+		top: -25px;
 	}
 	header nav #card_menu {
 		width: 200px;
 	}
-
 	
+	#eslo img{
+		width: 40%;
+	}
 	
 }
 
 @media screen and (min-width: 767px){
-
-	#eslo img{
-		width: 40%;
-	}
+	
+	
 	
 	header #eslo{
 		width:300px !important;
@@ -394,7 +396,9 @@ img{
 	top:0px;
 	left:0px;
 	}
-
+	#eslo img{
+		width: 50%;
+	}
 }
 
 
