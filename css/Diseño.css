@@ -22,14 +22,7 @@ header nav .ioMenuMovil{
 	padding-top: 5px;
 }
 
-header nav #hidemenu {
-    height: 25px;
-    width: 60px;
-    cursor: pointer;
-    line-height: 40px;
-    margin: 0px 0px 0px 10px;
-    padding-top: 5px;
-}
+
 
 header nav .ioMenuMovil img{
 	height: 100%;
@@ -319,6 +312,10 @@ img{
 }
 
 @media screen and (min-width: 767px){
+
+	#eslo img{
+		width: 40%;
+	}
 	
 	header #eslo{
 		width:300px !important;
@@ -368,7 +365,7 @@ img{
 		width: 150%;
 	}
 	header nav #card_menu {
-		top: -20px;
+		top: -25px;
 	}
 	header nav #hidemenu,
 	header nav #showmenu{
