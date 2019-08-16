@@ -1,6 +1,6 @@
 body{
 	font-size: 16px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato', sans-serif !important;
 	background: #fff;
 	position: relative;
 }
@@ -115,7 +115,9 @@ background-size: cover;
 	font-size: 4.2vw;
 }
 
-#slider #Biografia{
+#slider #Biografia, 
+#slider #Firmar,
+#slider #Acciones{
     left: 20%;
     position: absolute;
 }
@@ -261,7 +263,7 @@ footer .rrss a img{
 
     #slider #Biografia,
     #slider #Firmar,
-    #slider #Galeria {
+    #slider #Acciones {
         left: 40%;
         position: absolute;
     }
@@ -289,7 +291,7 @@ footer .rrss a img{
 	
 	#slider #Biografia,
 	#slider #Firmar,
-	#slider #Galeria,
+	#slider #Acciones,
 	#slider #HV{
 		left: 35%;
 		position: absolute;
@@ -313,16 +315,13 @@ footer .rrss a img{
 	}
 
 	#slider #Biografia,
-	#slider #HV{
+	#slider #Firmar,
+	#slider #Acciones{
 		left: 20%;
 		position: absolute;
 		
 	}
 	
-	#slider #Firmar,
-	#slider #HV{
-		
-	}
 	header nav #card_menu {
 		width: 200px;
 		}

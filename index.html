@@ -11,7 +11,7 @@
   <meta name="owner" content="Jorge Pana">
   <meta name="robots" content="index, follow">
 
-  <link rel="stylesheet" href="css/icomoon/style.css">
+  
   <link rel="stylesheet" href="fonts/fontawesome-webfont.ttf">
   <link rel="stylesheet" href="css/Diseño.css?v1">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900,900i&display=swap" rel="stylesheet">
@@ -20,12 +20,29 @@
 <!-- Bootstrap -->
 <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
 
+
 <!-- Font Awesome Icon -->
 <link rel="stylesheet" href="css/font-awesome.min.css">
 
+<link rel="stylesheet" href="css/icomoon/style.css">
+
+
 <!-- Custom stlylesheet -->
 <link type="text/css" rel="stylesheet" href="css/style.css"/>
+<link href="Content/plugins/sweetalert/sweetalert.css" rel="stylesheet" />
+<link href="Content/plugins/select2/select2.min.css" rel="stylesheet" />
 
+  <script type="text/javascript" src="Scripts/jquery-3.1.1.min.js"></script>
+  <script src="Scripts/bootstrap.js"></script>
+  <script src="Scripts/plugins/select2/select2.full.min.js"></script>
+  <script src="Scripts/plugins/sweetalert/sweetalert.min.js"></script>
+  <script src="Scripts/plugins/validate/jquery.validate.min.js"></script>
+  <script src="Scripts/plugins/validate/messages_es.min.js"></script>
+  <script src="Scripts/app/ValidacionesExtras.js"></script>
+  <script type="text/javascript" src="Scripts/utilidades.js"></script>
+
+  <script type="text/javascript" src="js/main.js"></script>
+  
 </head>
 
 <body>
@@ -54,6 +71,7 @@
           </figure>
         <ul>
             <li href="#" onclick="navSection('Inicio')">Inicio</li>
+            <li href="#" onclick="navSection('Acciones')">Acciones</li>
             <li href="#" onclick="navSection('Biografia')">Biografía</li>
             <li href="#" onclick="navSection('Firmar')">Firmar</li>
         </ul>
@@ -133,14 +151,18 @@
 					<div class="col-md-12">
 						<div class="contact-form">
 							<form id="form_Registrar">
-								<input class="input" type="text" name="Cedula" id="Cedula" placeholder="Cedula" required>
-								<input class="input" type="text" name="name" id="name" placeholder="Nombre" required>
-								<input class="input" type="text" name="Celular" id="Celular" placeholder="Celular" required>
-								<select class="form-control" id="Ciudad" name="Ciudad" aria-placeholder="Ciudad">
+								<label style="float: left;">Cedula</label>
+								<input onkeypress="return soloNumeros(event)" class="input" type="text" name="Cedula" id="Cedula" >
+								<label style="float: left;">Nombre</label>
+								<input class="input" type="text" name="name" id="name" >
+								<label  style="float: left;">Celular</label>
+								<input onkeypress="return soloNumeros(event)" class="input" type="text" name="Celular" id="Celular" >
+								<label style="float: left;">Barrio</label>
+								<select class="form-control" id="Barrio" name="Barrio" >
 
 								</select>
 								
-								<button  style="margin-top: 30px" class="main-button icon-button pull-right" id="btnGuardarRegistrar">Firmar</button>
+								<button type="button" role="button" style="margin-top: 30px" class="main-button icon-button pull-right" id="btnGuardarRegistrar">Firmar</button>
 							</form>
 						</div>
 					</div>
@@ -148,10 +170,36 @@
   </div> 
   </section>
 
-  <section class="slide" id="Galeria" style="display: none">
-    <div class="mainLogo" style="    text-align: -webkit-center;">
-        <h2> <strong style="font-size: 2.5vw;">Estamos trabajando en ello</strong>    </h2>
-        <figure><img style="width: 60%" src="img/barrera.png" alt="Rafico"></figure>
+  <section class="slide" id="Acciones" style="display: none; padding-bottom: 100px;"">
+    <div class="mainLogo" >
+
+        <h2> <strong>ACCIONES DEL CANDIDATO</strong></h2>
+
+      
+
+        <figure style="display:flex;">
+
+            <img style="width:50%; padding-right: 20px;" src="img\gale2\1.jpeg" alt="Alternate Text" />
+            <img style="width:50%" src="img\gale2\2.jpeg" alt="Alternate Text" />
+        </figure>
+        
+        
+        <figure style="display:flex; padding-top: 20px;">
+          <img style="width:50%; padding-right: 20px;" src="img\gale2\3.jpeg" alt="Alternate Text" />
+          <img style="width:50%" src="img\gale2\4.jpeg" alt="Alternate Text" />
+        </figure>
+        <figure style="display:flex; padding-top: 20px;" >
+          <img style="width:50%; padding-right: 20px;" src="img\gale2\5.jpeg" alt="Alternate Text" />
+          <img style="width:50%" src="img\gale2\6.jpeg" alt="Alternate Text" />
+        </figure>
+        <figure style="display:flex; padding-top: 20px;" >
+          <img style="width:50%; padding-right: 20px;" src="img\gale2\7.jpeg" alt="Alternate Text" />
+          <img style="width:50%" src="img\gale2\8.jpeg" alt="Alternate Text" />
+        </figure>
+        <figure style="display:flex; padding-top: 20px;" >
+          <img style="width:50%; padding-right: 20px;" src="img\gale2\9.jpeg" alt="Alternate Text" />
+        </figure>
+
     </div> 
   </section>
 
@@ -218,9 +266,6 @@ function alertSize() {
     menu.style.display = "block";
   }
 
-  document.getElementById("Inicio").style.backgroundSize = myHeight;
-  document.getElementById("Firmar").style.backgroundSize = myHeight;
-
 } 
 
 function displayMenu(){
@@ -240,7 +285,7 @@ function navSection(nav){
   section[0]="Inicio";
   section[1]="Biografia";
   section[2]="Firmar";
-  section[3]="Galeria";
+  section[3]="Acciones";
   section[4]="HV";
 
   var search;
