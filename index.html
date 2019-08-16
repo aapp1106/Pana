@@ -300,6 +300,13 @@ function displayMenu(){
 
   }
 
+  function resetear() {
+    document.getElementById("form_Registrar").reset();
+    form_RegistrarFirma.resetForm();
+    $("#Barrio").select2("val", "");
+    $("#Barrio").select2("val", "0");
+}
+
 function navSection(nav){
   var section = new Array(5);
   section[0]="Inicio";
@@ -317,6 +324,10 @@ function navSection(nav){
       search.style.display ="block";
     }
   }  
+  if(nav=="Firmar"){
+    resetear();
+  }
+
 }
 
 function displaySection(nav){
