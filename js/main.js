@@ -111,7 +111,7 @@ function SaveRegistrar() {
 
 
 function Get_Barrios() {
-    var formURL = 'http://167.86.106.173:8069/ConfiCampana/GetBarrios';
+    var formURL = 'http://167.86.106.173:8069/Registrar/GetBarrios';
     $.ajax(
         {
             url: formURL,
