@@ -115,6 +115,12 @@ background-size: cover;
 	font-size: 4.2vw;
 }
 
+iframe.ytb-embed {
+	max-width: 96% !important;
+	display: block;
+	margin: 10px auto;
+}
+
 #slider #Biografia, 
 #slider #Firmar,
 #slider #Acciones{
@@ -244,6 +250,10 @@ footer .rrss a img{
 	width: 100%;
 }
 
+img{
+	margin-bottom: 10px;
+}
+
 @media screen and (min-width: 480px) {
     header #eslo {
         width: 200px !important;
@@ -274,7 +284,8 @@ footer .rrss a img{
 
     .mainLogo {
         padding-right: 20px;
-    }
+	}
+	
 }
 
 @media screen and (min-width: 600px){
@@ -302,6 +313,8 @@ footer .rrss a img{
 	header nav #card_menu {
 		width: 200px;
 	}
+
+	
 	
 }
 
@@ -384,8 +397,9 @@ footer .rrss a img{
 	top:0px;
 	left:0px;
 	}
+
 }
-	
+
 
 
 @media screen and (min-width: 950px){
