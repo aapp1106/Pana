@@ -34,7 +34,7 @@ header nav .ioMenuMovil img{
 	background: #0C8842;
 	*/
         background: rgba(41, 50, 109, 0.5);
-        top: -30px;
+        top: -25px;
         left: 0px;
         z-index: 999;
         margin-bottom: 50px;
@@ -150,13 +150,7 @@ iframe.ytb-embed {
 	
 }
 
-#Inicio {
-    background: linear-gradient( rgba(41, 50, 109, 0.2), rgba(41, 50, 109, 0.2) ),url('../img/FOTOS LISTA.jpg') no-repeat top left fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
+
 /*
 #Firmar,
 #Galeria,
@@ -250,7 +244,14 @@ img{
 @media screen and (min-width: 480px) {
     header #eslo {
         width: 200px !important;
-    }
+	}
+	#Inicio {
+		background: linear-gradient( rgba(41, 50, 109, 0.2), rgba(41, 50, 109, 0.2) ),url('../img/FOTOS LISTA1.jpg') no-repeat top center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
 
     #slider #Inicio .mainLogo {
         width: 270px;
@@ -285,6 +286,14 @@ img{
 
 @media screen and (max-width: 600px){
 	
+	#Inicio {
+		background: linear-gradient( rgba(41, 50, 109, 0.2), rgba(41, 50, 109, 0.2) ),url('../img/FOTOS LISTA1.jpg') no-repeat top center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
 	header #eslo{
 		width:200px !important;
 	}
@@ -318,7 +327,14 @@ img{
 @media screen and (min-width: 767px){
 	
 	
-	
+	#Inicio {
+		background: linear-gradient( rgba(41, 50, 109, 0.2), rgba(41, 50, 109, 0.2) ),url('../img/FOTOS\ LISTA.jpg') no-repeat top left fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
 	header #eslo{
 		width:300px !important;
 	}
