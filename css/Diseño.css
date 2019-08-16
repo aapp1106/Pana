@@ -268,8 +268,10 @@ img{
     #slider #Biografia,
     #slider #Firmar,
     #slider #Acciones {
-        left: 40%;
-        position: absolute;
+        left: 0%;
+		position: absolute;
+		padding-left: 20px;
+		padding-right: 20px;
     }
 
     header nav #card_menu {
@@ -308,8 +310,10 @@ img{
 	#slider #Firmar,
 	#slider #Acciones,
 	#slider #HV{
-		left: 35%;
+		left: 0%;
 		position: absolute;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 	header nav #card_menu {
 		top: -25px;
