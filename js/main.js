@@ -54,7 +54,7 @@ function SaveRegistrar() {
 	if (form_RegistrarFirma.form()) {
 	
 		var form_data = new FormData();
-		var formURL = 'http://167.86.106.173:8069/Registrar/InsertRegistrarPage';
+		var formURL = 'https://167.86.106.173:9999/Registrar/InsertRegistrarPage';
 		var Params = { 
 			Cedula: $('#Cedula').val(), 
 			Nombre: $('#name').val(), 
@@ -113,7 +113,7 @@ function SaveRegistrar() {
 
 
 function Get_Barrios() {
-    var formURL = 'http://167.86.106.173:8069/Registrar/GetBarrios';
+    var formURL = 'https://167.86.106.173:9999/Registrar/GetBarrios';
     $.ajax(
         {
             url: formURL,
