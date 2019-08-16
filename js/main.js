@@ -113,7 +113,7 @@ function SaveRegistrar() {
 
 
 function Get_Barrios() {
-    var formURL = 'http://167.86.106.173:8069/ConfiCampana/GetMunicipios';
+    var formURL = 'http://167.86.106.173:8069/Registrar/GetBarrios';
     $.ajax(
         {
             url: formURL,
@@ -123,14 +123,13 @@ function Get_Barrios() {
             success: function (data) {
                 if (!data.Is_Error) {
                     var DataPartido = data.Objeto;
-                    var HtmlMunicipio = "";
-                    HtmlMunicipio += "<option value=''>Seleccionar</option>";
+                    var HtmlBarrios = "";
+                    HtmlBarrios += "<option value=''>Seleccionar</option>";
                     $.each(DataPartido, function (index, item) {
-                        if(item.Co_Depar == 20){
-							HtmlMunicipio += "<option value=" + item.Id_Muni + ">" + item.Des_Muni + "</option>";
-						}
+						HtmlBarrios += "<option value=" + item.IdBarrio + ">" + item.Barrio + "</option>";
+						
                     })
-					$('#Barrio').html(HtmlMunicipio);
+					$('#Barrio').html(HtmlBarrios);
 					$('#Barrio').select2();
                 } else {
                     alert(data);
