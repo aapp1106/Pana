@@ -151,7 +151,7 @@ iframe.ytb-embed {
 }
 
 #Inicio {
-    background: linear-gradient( rgba(41, 50, 109, 0.2), rgba(41, 50, 109, 0.2) ),url('../img/FOTOS LISTA.jpg') no-repeat top center fixed;
+    background: linear-gradient( rgba(41, 50, 109, 0.2), rgba(41, 50, 109, 0.2) ),url('../img/FOTOS LISTA.jpg') no-repeat top left fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

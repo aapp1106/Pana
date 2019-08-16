@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-	/*Get_Barrios();*/
+	Get_Barrios();
 	$("#btnGuardarRegistrar").on("click", function () { SaveRegistrar(); });
 	form_RegistrarFirma = Validador("form_Registrar", {
         Cedula: {
