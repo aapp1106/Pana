@@ -1,0 +1,430 @@
+body{
+	font-size: 16px;
+	font-family: 'Lato', sans-serif !important;
+	background: #fff;
+	position: relative;
+}
+
+header {
+    width: 100%;
+    height: 35px;
+    background: #29326D;
+}
+header h1{
+	display: none;
+}
+header nav .ioMenuMovil{
+	height: 25px;
+	width: 25px;
+	cursor: pointer;
+	line-height: 40px;
+	margin: 0px 0px 0px 10px;
+	padding-top: 5px;
+}
+
+
+
+header nav .ioMenuMovil img{
+	height: 100%;
+}
+    header nav #card_menu {
+        position: relative;
+        width: 200px;
+        /*height: 500px;
+	background: #0C8842;
+	*/
+        background: rgba(41, 50, 109, 0.5);
+        top: -25px;
+        left: 0px;
+        z-index: 999;
+        margin-bottom: 50px;
+    }
+header nav #card_menu ul{
+	margin-top: 20px;
+	color: #fff;
+}
+
+header nav #card_menu ul li{
+	list-style: none;
+	font-size: 1.5em;
+	line-height: 50px;
+	cursor: pointer;
+}
+
+header nav #card_menu ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+header nav {
+width: 62%;
+position: relative;
+
+}
+
+
+header #prev_section,
+header #next_section{
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	overflow: hidden;
+	margin: 5px;
+	position: absolute;
+	top:0px;
+}
+header #prev_section{
+	right: 35px;
+}
+header #next_section{
+	right: 5px;
+}
+header #prev_section img,
+header #next_section img{
+	width: 100%
+}
+
+
+/*
+body {
+background: url('../img/FOTOS LISTA.jpg') no-repeat top center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}*/
+
+#slider {
+    width: 100%;
+    position: relative;
+    /*height: 600px;*/
+    color: #29326D;
+}
+
+#slider #Inicio{
+	position: relative;
+	text-align: center;
+	padding-bottom: 130px;
+	font-size: 4.2vw;
+}
+
+iframe.ytb-embed {
+	max-width: 96% !important;
+	display: block;
+	margin: 10px auto;
+}
+
+#slider #Biografia, 
+#slider #Firmar,
+#slider #Acciones{
+    left: 20%;
+    position: absolute;
+}
+
+.Letrascontenido{
+	color: black;
+	text-align: justify;
+	line-height: 20px;
+}
+
+
+
+#slider #Inicio .mainLogo{
+	background: none;
+	position: relative;
+	width: 60vw;
+	margin-left: 20vw;
+	min-height: 430px;
+}
+
+#slider #Inicio .mainLogo h2{
+	margin-top: 0px;
+	padding-top: 80px;
+}
+
+#slider #Inicio .mainLogo figure,
+#slider #Inicio .mainLogo img{
+	width: 100%;
+	margin: 0px;
+
+	
+}
+
+
+/*
+#Firmar,
+#Galeria,
+#HV{
+	background: url('../img/barrera.png') no-repeat top center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 300px;
+    width: 500px;
+}
+
+*/
+
+
+#section{
+	position: absolute;
+	width: 100%;
+	top:0px;
+	left:0px;
+}
+
+.color_textoazul {
+    color: #003760;
+    font-style: italic;
+}
+
+
+
+
+footer {
+    width: 100%;
+    background: white;
+    color: #707070;
+    text-align: center;
+    z-index: 90;
+    position: fixed;
+    bottom: 0px;
+}
+
+    footer .rrss {
+        margin-top: 10px;
+        width: 100%;
+        height: 20px;
+        margin-bottom: 10px;
+    }
+
+
+footer .rrss a img{
+	width: 100%;
+}
+
+img{
+	margin-bottom: 10px;
+}
+
+@media screen and (min-width: 480px) {
+    header #eslo {
+        width: 200px !important;
+	}
+	#Inicio {
+		background: linear-gradient( rgba(41, 50, 109, 0.2), rgba(41, 50, 109, 0.2) ),url('../img/FOTOS LISTA1.jpg') no-repeat top center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	footer .rrss a{
+		height: 30px;
+		width: 25px;
+		display: inline-block;
+	}
+
+    #slider #Inicio .mainLogo {
+        width: 270px;
+        left: 50%;
+        margin-left: -135px;
+    }
+
+    #slider #Inicio .mainLogo {
+        width: 270px;
+        left: 50%;
+        margin-left: -135px;
+    }
+
+    #slider #Biografia,
+    #slider #Firmar,
+    #slider #Acciones {
+        left: 0%;
+		position: absolute;
+		padding-left: 20px;
+		padding-right: 20px;
+    }
+
+    header nav #card_menu {
+        width: 200px;
+    }
+
+    .mainLogo {
+        padding-right: 20px;
+	}
+	#eslo img{
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 600px){
+	
+	#Inicio {
+		background: linear-gradient( rgba(41, 50, 109, 0.2), rgba(41, 50, 109, 0.2) ),url('../img/FOTOS LISTA1.jpg') no-repeat top center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	footer .rrss a{
+		height: 30px;
+		width: 25px;
+		display: inline-block;
+	}
+
+	header #eslo{
+		width:200px !important;
+	}
+
+	#slider #Inicio .mainLogo{
+		width: 270px;
+		left: 40%;
+		margin-left: -135px;
+	}
+	
+	#slider #Biografia,
+	#slider #Firmar,
+	#slider #Acciones,
+	#slider #HV{
+		left: 0%;
+		position: absolute;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 200px;
+	}
+	header nav #card_menu {
+		top: -25px;
+	}
+	header nav #card_menu {
+		width: 200px;
+	}
+	
+	#eslo img{
+		width: 40%;
+	}
+	
+}
+
+@media screen and (min-width: 767px){
+	
+	
+	#Inicio {
+		background: linear-gradient( rgba(41, 50, 109, 0.2), rgba(41, 50, 109, 0.2) ),url('../img/FOTOS\ LISTA.jpg') no-repeat top left fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	footer .rrss a{
+		height: 30px;
+		width: 25px;
+		display: inline-block;
+	}
+
+	#slider #Biografia,
+	#slider #Firmar,
+	#slider #Acciones,
+	#slider #HV{
+		left: 0%;
+		position: absolute;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 150px;
+	}
+
+	header #eslo{
+		width:300px !important;
+	}
+	.mainLogo {
+		padding-right: 120px;
+	}
+
+	#slider #Biografia,
+	#slider #Firmar,
+	#slider #Acciones{
+		left: 20%;
+		position: absolute;
+		
+	}
+	
+	header nav #card_menu {
+		width: 200px;
+		}
+	header{
+		height: 60px;
+	}	
+	header h1{
+		display: inline-block;
+		width: 20%;
+		margin: 0px;
+		height: 60px;
+		margin-left: 5px;
+		line-height: 60px;
+		min-width: 200px;
+	}
+	header	h1 > *{
+		display: inline-block;
+		vertical-align: middle;
+		text-decoration: none;
+		color:white;
+		font-size: 0.8em;
+		margin: 0px 3px;
+	}
+        header h1 figure {
+            height: 60px;
+            width: 120px;
+            margin: 0px;
+            margin-top: -10px;
+        }
+	header h1 figure img{
+		width: 150%;
+	}
+	header nav #card_menu {
+		top: -25px;
+	}
+	header nav #hidemenu,
+	header nav #showmenu{
+		display: none;
+	}
+
+	header #prev_section,
+	header #next_section{
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		right: 40px;
+		background: #0C8842;
+		z-index: 999;
+		border-radius: 50%;
+	}
+	header #prev_section{
+		top: 115px;
+	}
+	header #next_section{
+		top:190px;
+	}
+	header #prev_section img,
+	header #next_section img{
+	width: 100%;
+	top:0px;
+	left:0px;
+	}
+	#eslo img{
+		width: 50%;
+	}
+}
+
+
+
+@media screen and (min-width: 950px){
+	footer .rrss a{
+		height: 30px;
+		width: 50px;
+		display: inline-block;
+	}
+	
+}
